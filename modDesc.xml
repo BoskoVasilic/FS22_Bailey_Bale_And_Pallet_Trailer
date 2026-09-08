@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="67">
+    <author>Bolex Simulation</author>
+    <version>1.1.0.0</version>
+    <title>
+    <en>Bailey Bale And Pallet Trailer</en>
+	<de>Bailey Ballen Und Palettenanhänger</de>
+	<fr>Remorque Bailey Bale Et Palette</fr>
+    </title> 
+    <description>
+<en><![CDATA[Bailey Bale and Pallet trailer is a very useful piece of machinery for transporting bales and pallets. 
+With lots of years of experience, Bailey made the right trailer for you and your farm!
+This trailer can move 11-20 bales or 15-30 pallets (depends on size). 
+
+Price: 8000$
+
+Configurations:
+- Colour options (trailer and rims)
+- Wheels options
+- Beacon options
+- Design options
+
+Changelog 1.1.0.0
+- Added Led beacon options
+- Added Matte colour options to the trailer colours
+- Changed attacher type (Now can be attached to telehandlers)
+- Fixed tension belts going through the trailer
+- Minor bugs fixed
+
+It is now possible to have autoload with this trailer if you install Universal Autoload ModHub Add-on mod by loki_79 and ddewar. (Just if you want autoload.)
+]]></en>
+<de><![CDATA[Der Ballen- und Palettenanhänger von Bailey ist ein sehr nützlicher Anhänger für den Transport.
+Mit langjähriger Erfahrung hat Bailey den richtigen Anhänger für Sie und Ihren Betrieb hergestellt!
+Dieser Anhänger kann 11-20 Ballen oder 15-30 Paletten transportieren (kommt auf die Größe an).
+
+Preis: 8000€
+
+Konfigurationen:
+- Farboptionen (Anhänger und Felgen)
+- Räder-Optionen
+- RUL-Optionen
+- Design-Optionen
+
+Änderungsliste 1.1.0.0
+- LED-RUL-Optionen hinzugefügt
+- Matte Farboptionen zu den Trailerfarben hinzugefügt
+- Geänderter Anbaugerätetyp (kann jetzt an Teleskoplader angebaut werden)
+- Feste Spanngurte, die durch den Anhänger gehen
+- Kleine Fehler behoben
+
+Es ist jetzt möglich, Autoload mit diesem Trailer zu haben, wenn Sie Universal Autoload ModHub Add-on mod von loki_79 und ddewar installieren. (Nur wenn Sie Autoload wünschen.)
+]]></de>
+<fr><![CDATA[La remorque Bailey Bale and Pallet est une machine très utile pour le transport de balles et de palettes.
+Avec de nombreuses années d'expérience, Bailey a fabriqué la bonne remorque pour vous et votre ferme !
+Cette remorque peut déplacer 11-20 balles ou 15-30 palettes (dépend de la taille).
+
+Prix: 8000€
+
+Configurations:
+- Options de couleur (remorque et jantes)
+- Options de roues
+- Options de balise
+- Possibilités de conception
+
+Changelog 1.1.0.0
+- Ajout d'options de balise Led
+- Ajout d'options de couleur mate aux couleurs de la bande-annonce
+- Type d'attacheur modifié (peut désormais être attaché aux chariots télescopiques)
+- Courroies à tension fixe traversant la remorque
+- Bugs mineurs corrigés
+
+Il est maintenant possible d'avoir un chargement automatique avec cette bande-annonce si vous installez le module complémentaire Universal Autoload ModHub par loki_79 et ddewar. (Juste si vous voulez un chargement automatique.)
+]]></fr>
+
+    </description>
+    <iconFilename>icon_BPTrailer.dds</iconFilename>
+    <multiplayer supported="true" />
+    <storeItems>
+        <storeItem rootNode="vehicle" xmlFilename="BPTrailer.xml"/>
+    </storeItems>
+	<brands>
+        <brand name="Bailey" title="Bailey" image="brand_Bailey.dds"/>
+    </brands>
+	<l10n>
+		<text name="beacon"><en>Beacon</en><de>RUL</de><fr>Balisee</fr></text>
+		<text name="no"><en>No</en><de>Nein</de><fr>Non</fr></text>
+		<text name="leftStandard"><en>Left standard</en><de>Standard links</de><fr>La gauche standard</fr></text>
+		<text name="rightStandard"><en>Right standard</en><de>Standard rechts</de><fr>Droit standard</fr></text>
+		<text name="bothStandard"><en>Both standard</en><de>Standard beidseitig</de><fr>Tous les deux standard</fr></text>
+		<text name="leftLed"><en>Left led</en><de>LED links</de><fr>La gauche led</fr></text>
+		<text name="rightLed"><en>Right led</en><de>LED rechts</de><fr>Droit led</fr></text>
+		<text name="bothLed"><en>Both led</en><de>LED beidseitig</de><fr>Tous les deux led</fr></text>
+		<text name="standard"><en>Standard</en><de>Standard</de><fr>Standard</fr></text>
+		<text name="front"><en>Front</en><de>Vorne</de><fr>De face</fr></text>
+		<text name="back"><en>Back</en><de>Hinten</de><fr>Dos</fr></text>
+		<text name="nothing"><en>Nothing</en><de>Nichts</de><fr>Rien</fr></text>
+		<text name="baileyGreen"><en>Bailey Green</en><de>Bailey Grün</de><fr>Bailey Vert</fr></text>
+		<text name="chromeBlack"><en>Chrome Black</en><de>Chrom Schwarz</de><fr>Noir chromé</fr></text>
+	    <text name="chromeNightBlue"><en>Chrome Night Blue</en><de>Chrom Nachtblau</de><fr>Chrome Bleu Nuit</fr></text>
+	    <text name="chromeOrange"><en>Chrome Orange</en><de>Chromorange</de><fr>Orange chromé</fr></text>
+	    <text name="chromeGreen"><en>Chrome Green</en><de>Chromgrün</de><fr>Vert chromé</fr></text>
+	    <text name="chromePurple"><en>Chrome Purple</en><de>Chrom Lila</de><fr>Violet chromé</fr></text>
+	    <text name="chromeBlue"><en>Chrome Blue</en><de>Chromblau</de><fr>Bleu chromé</fr></text>
+	    <text name="chromeRed"><en>Chrome Red</en><de>Chromrot</de><fr>Rouge chromé</fr></text>
+	    <text name="chromeGold"><en>Chrome Gold</en><de>Chrom-Gold</de><fr>Or chromé</fr></text>
+	    <text name="chromeLightBlue"><en>Chrome Light Blue</en><de>Chrom hellblau</de><fr>Bleu clair chromé</fr></text>
+	    <text name="chromeBrown"><en>Chrome Brown</en><de>Chrombraun</de><fr>Brun chromé</fr></text>
+	    <text name="chromeLightGreen"><en>Chrome Light Green</en><de>Chrom hellgrün</de><fr>Vert clair chromé</fr></text>
+	    <text name="chromePureGreen"><en>Chrome Pure Green</en><de>Chrom Reines Grün</de><fr>Vert Pur Chrome</fr></text>
+	    <text name="chromeGray"><en>Chrome Gray</en><de>Chromgrau</de><fr>Gris chromé</fr></text>
+	    <text name="matteBlack"><en>Matte Black</en><de>Matt-schwarz</de><fr>Noir mat</fr></text>
+	    <text name="matteNightBlue"><en>Matte Night Blue</en><de>Mattes Nachtblau</de><fr>Bleu nuit mat</fr></text>
+	    <text name="matteOrange"><en>Matte Orange</en><de>Matt-Orange</de><fr>Orange Mat</fr></text>
+	    <text name="matteGreen"><en>Matte Green</en><de>Mattgrün</de><fr>Vert mat</fr></text>
+	    <text name="mattePurple"><en>Matte Purple</en><de>Mattes Lila</de><fr>Violet mat</fr></text>
+	    <text name="matteBlue"><en>Matte Blue</en><de>Mattblau</de><fr>Bleu Mat</fr></text>
+	    <text name="matteRed"><en>Matte Red</en><de>Mattrot</de><fr>Rouge mat</fr></text>
+	    <text name="matteGold"><en>Matte Gold</en><de>Mattgold</de><fr>Or mat</fr></text>
+	    <text name="matteBrown"><en>Matte Brown</en><de>Mattbraun</de><fr>Brun mat</fr></text>
+	    <text name="matteLightGreen"><en>Matte Light Green</en><de>Mattes Hellgrün</de><fr>Vert clair mat</fr></text>
+	</l10n>
+</modDesc>	

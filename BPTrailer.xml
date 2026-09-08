@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="trailer">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name><en>Bale Trailer</en>
+		<de>Ballenanhänger</de>
+		<fr>Remorque à balles</fr></name>
+        <functions>
+            <function>$l10n_function_baleTrailer</function>
+        </functions>
+        <image>store.dds</image>
+        <price>8000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>Bailey</brand>
+        <category>baleLoaders</category>
+        <shopTranslationOffset>0 0 0</shopTranslationOffset>
+        <shopRotationOffset>0 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>429824</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>83200</indexBufferMemoryUsage>
+        <textureMemoryUsage>1310720</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+	<base>
+		<typeDesc>$l10n_typeDesc_tipper</typeDesc>
+        <filename>BPTrailer.i3d</filename>
+        <size width="3.5" length="8" lengthOffset="0.5"/>
+        <components>
+            <component centerOfMass="0.01 1.01 -1.01" solverIterationCount="10" mass="3500"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+    </base>	 
+	
+	<wheels>		
+		<wheelConfigurations>
+            <wheelConfiguration name="Standard" price="0"  brand="NOKIAN" saveId="NOKIAN_DEFAULT">>
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/nokian/TRI2/340_80R18.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/TRI2/340_80R18.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelFrontRight" forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/TRI2/340_80R18.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/TRI2/340_80R18.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                </wheels>
+				<objectChange node="wheelFrontLeft"  scaleActive="0.98 0.98 0.98"  scaleInactive="1 1 1" />
+                <objectChange node="wheelFrontRight"  scaleActive="0.98 0.98 0.98"  scaleInactive="1 1 1" />
+                <objectChange node="wheelBackLeft"  scaleActive="0.98 0.98 0.98"  scaleInactive="1 1 1" />
+                <objectChange node="wheelBackRight"  scaleActive="0.98 0.98 0.98"  scaleInactive="1 1 1" />
+            </wheelConfiguration>
+			
+			<wheelConfiguration name="Standard" price="0"  brand="TRELLEBORG">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TH400/340_80R18.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TH400/340_80R18.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelFrontRight" forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TH400/340_80R18.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TH400/340_80R18.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                </wheels>
+				<objectChange node="wheelFrontLeft"  scaleActive="0.98 0.98 0.98"  scaleInactive="1 1 1" />
+                <objectChange node="wheelFrontRight"  scaleActive="0.98 0.98 0.98"  scaleInactive="1 1 1" />
+                <objectChange node="wheelBackLeft"  scaleActive="0.98 0.98 0.98"  scaleInactive="1 1 1" />
+                <objectChange node="wheelBackRight"  scaleActive="0.98 0.98 0.98"  scaleInactive="1 1 1" />
+            </wheelConfiguration>
+			
+			<wheelConfiguration name="Standard" price="0"  brand="MITAS">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/mitas/TR09/320_80R18.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/mitas/TR09/320_80R18.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelFrontRight" forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/mitas/TR09/320_80R18.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/mitas/TR09/320_80R18.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                </wheels>
+				<objectChange node="wheelFrontLeft"  scaleActive="0.98 0.98 0.98"  scaleInactive="1 1 1" />
+                <objectChange node="wheelFrontRight"  scaleActive="0.98 0.98 0.98"  scaleInactive="1 1 1" />
+                <objectChange node="wheelBackLeft"  scaleActive="0.98 0.98 0.98"  scaleInactive="1 1 1" />
+                <objectChange node="wheelBackRight"  scaleActive="0.98 0.98 0.98"  scaleInactive="1 1 1" />
+            </wheelConfiguration>
+			
+			<wheelConfiguration name="Standard" price="0"  brand="CONTINENTAL">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/continental/terrainContactHT/275_70R18.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/terrainContactHT/275_70R18.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.7" repr="wheelFrontRight" forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/terrainContactHT/275_70R18.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/terrainContactHT/275_70R18.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="1.8" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="15" suspTravel="0.15" spring="60" damper="60" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+		
+		<hubs>
+			<color0>BIZON_BLACK1</color0>
+			<color1>BIZON_BLACK1</color1>
+	
+			<hub linkNode="FrontLeftHub" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true"  scale="0.18 0.28 0.28" />
+			<hub linkNode="BackLeftHub" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true"  scale="0.18 0.28 0.28" />
+			<hub linkNode="BackRightHub" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false"  scale="0.18 0.28 0.28" />
+			<hub linkNode="FrontRightHub" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.18 0.28 0.28" />
+		</hubs>
+	</wheels>
+	
+	<designConfigurations>
+		<designConfiguration name="$l10n_standard" price="0">
+			<objectChange node="frontSide" visibilityActive="true" />
+			<objectChange node="backSide" visibilityActive="true" />
+			<objectChange node="backSideCol" compoundChildActive="true" />
+			<objectChange node="frontSideCol" compoundChildActive="true" />
+        </designConfiguration>
+		<designConfiguration name="$l10n_front" price="50">
+			<objectChange node="frontSide" visibilityActive="true" />
+			<objectChange node="backSide" visibilityActive="false" />
+			<objectChange node="backSideCol" compoundChildActive="false" />
+			<objectChange node="frontSideCol" compoundChildActive="true" />
+        </designConfiguration>
+		<designConfiguration name="$l10n_back" price="100">
+			<objectChange node="frontSide" visibilityActive="false" />
+			<objectChange node="backSide" visibilityActive="true" />
+			<objectChange node="backSideCol" compoundChildActive="true" />
+			<objectChange node="frontSideCol" compoundChildActive="false" />
+        </designConfiguration>
+		<designConfiguration name="$l10n_nothing" price="0">
+			<objectChange node="frontSide" visibilityActive="false" />
+			<objectChange node="backSide" visibilityActive="false" />
+			<objectChange node="backSideCol" compoundChildActive="false" />
+			<objectChange node="frontSideCol" compoundChildActive="false" />
+        </designConfiguration>
+    </designConfigurations>
+	
+	<vehicleTypeConfigurations title="$l10n_beacon">
+        <vehicleTypeConfiguration name="$l10n_no" price="0" vehicleType="trailer">
+            <objectChange node="beaconLight" visibilityActive="false" />
+			<objectChange node="beaconLight2" visibilityActive="false" />
+			<objectChange node="beaconLightLed" visibilityActive="false" />
+			<objectChange node="beaconLightLed2" visibilityActive="false" />
+        </vehicleTypeConfiguration>
+        <vehicleTypeConfiguration name="$l10n_leftStandard" price="100" vehicleType="trailer">
+            <objectChange node="beaconLight" visibilityActive="false" />
+			<objectChange node="beaconLight2" visibilityActive="true" />
+			<objectChange node="beaconLightLed" visibilityActive="false" />
+			<objectChange node="beaconLightLed2" visibilityActive="false" />
+        </vehicleTypeConfiguration>
+		<vehicleTypeConfiguration name="$l10n_rightStandard" price="100" vehicleType="trailer">
+            <objectChange node="beaconLight" visibilityActive="true" />
+			<objectChange node="beaconLight2" visibilityActive="false" />
+			<objectChange node="beaconLightLed" visibilityActive="false" />
+			<objectChange node="beaconLightLed2" visibilityActive="false" />
+        </vehicleTypeConfiguration>
+		<vehicleTypeConfiguration name="$l10n_bothStandard" price="200" vehicleType="trailer">
+            <objectChange node="beaconLight" visibilityActive="true" />
+			<objectChange node="beaconLight2" visibilityActive="true" />
+			<objectChange node="beaconLightLed" visibilityActive="false" />
+			<objectChange node="beaconLightLed2" visibilityActive="false" />
+        </vehicleTypeConfiguration>
+		<vehicleTypeConfiguration name="$l10n_leftLed" price="100" vehicleType="trailer">
+            <objectChange node="beaconLight" visibilityActive="false" />
+			<objectChange node="beaconLight2" visibilityActive="false" />
+			<objectChange node="beaconLightLed" visibilityActive="false" />
+			<objectChange node="beaconLightLed2" visibilityActive="true" />
+        </vehicleTypeConfiguration>
+		<vehicleTypeConfiguration name="$l10n_rightLed" price="100" vehicleType="trailer">
+            <objectChange node="beaconLight" visibilityActive="false" />
+			<objectChange node="beaconLight2" visibilityActive="false" />
+			<objectChange node="beaconLightLed" visibilityActive="true" />
+			<objectChange node="beaconLightLed2" visibilityActive="false" />
+        </vehicleTypeConfiguration>
+		<vehicleTypeConfiguration name="$l10n_bothLed" price="200" vehicleType="trailer">
+            <objectChange node="beaconLight" visibilityActive="false" />
+			<objectChange node="beaconLight2" visibilityActive="false" />
+			<objectChange node="beaconLightLed" visibilityActive="true" />
+			<objectChange node="beaconLightLed2" visibilityActive="true" />
+        </vehicleTypeConfiguration>
+    </vehicleTypeConfigurations>
+	
+	<attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="trailer" attacherHeight="0.53" />
+        </inputAttacherJoints>      
+		<brakeForce force="0.9"/>
+    </attachable>
+	
+	<connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn01"  length="1.3" diameter="0.02">
+        </hose>
+		<hose inputAttacherJointIndices="1" type="electric"  node="electricIn01"  length="1.3" diameter="0.007">
+            <objectChange node="electric_1" visibilityActive="true" visibilityInactive="false"/>
+        </hose>
+    </connectionHoses>
+	
+	<lights>
+		<sharedLight linkNode="lightBack1"   filename="$data/shared/assets/lights/lizard/rearLight49_left.xml"/>
+		<sharedLight linkNode="lightBack2"   filename="$data/shared/assets/lights/lizard/rearLight49_right.xml"/>
+		<sharedLight linkNode="reverseLight"   filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+		<sharedLight linkNode="sideLightRight"   filename="$data/shared/assets/lights/lizard/sideMarker01_right.xml"/>
+		<sharedLight linkNode="sideLightLeft"   filename="$data/shared/assets/lights/lizard/sideMarker01_left.xml"/>
+		<sharedLight linkNode="triangle"	 filename="$data/shared/assets/reflectors/lizard/redTriangle_02.xml"/>
+		<sharedLight linkNode="plateLight1" filename="$data/shared/assets/lights/lizard/plateNumberLight01.xml" />
+        <sharedLight linkNode="plateLight2" filename="$data/shared/assets/lights/lizard/plateNumberLight01.xml" />
+		<realLights>
+            <high>
+                <turnLightLeft node="turnLightLeftBack" />
+                <turnLightRight node="turnLightRightBack" />
+				<light node="backLightsHigh1" lightTypes="0" />
+				<light node="backLightsHigh2" lightTypes="0" />
+				<light node="licensePlateLightHigh" lightTypes="0" />				
+				<brakeLight node="backLightsHigh3" />
+				<brakeLight node="backLightsHigh4" />
+				<reverseLight node="reverseLights"/>
+            </high>
+        </realLights>
+		<beaconLights>
+            <beaconLight node="beaconLight" filename="$data/shared/assets/beaconLights/lizard/beaconLight06.xml" />
+			<beaconLight node="beaconLight2" filename="$data/shared/assets/beaconLights/lizard/beaconLight06.xml" />
+			<beaconLight node="beaconLightLed" filename="$data/shared/assets/beaconLights/lizard/beaconLight08.xml" />
+			<beaconLight node="beaconLightLed2" filename="$data/shared/assets/beaconLights/lizard/beaconLight08.xml" />
+		</beaconLights>
+	</lights>
+	
+	<licensePlates>
+        <licensePlate node="plateNode" frame="true" position="BACK" preferedType="ELONGATED" placementArea="0.07 0.3 0.07 0.3"/>
+    </licensePlates>
+	
+	<tensionBelts>
+        <tensionBeltsConfigurations>
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="tensionBelts" jointNode="trailer_main_component" width="0.075" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.3" defaultOffset="0.5" defaultOffsetSide="0.1" defaultHeight="4" activationTrigger="beltActivationTrigger">
+                    <tensionBelt startNode="tensionBeltStart1" endNode="tensionBeltEnd1">
+						<intersectionNode node="intersection1"/>
+						<intersectionNode node="intersectionEnd11"/>
+						<intersectionNode node="intersectionEnd1"/>
+					</tensionBelt>
+                    <tensionBelt startNode="tensionBeltStart2" endNode="tensionBeltEnd2">
+						<intersectionNode node="intersection2"/>
+						<intersectionNode node="intersectionEnd21"/>
+						<intersectionNode node="intersectionEnd2"/>
+					</tensionBelt>
+                    <tensionBelt startNode="tensionBeltStart3" endNode="tensionBeltEnd3">
+						<intersectionNode node="intersection3"/>
+						<intersectionNode node="intersectionEnd31"/>
+						<intersectionNode node="intersectionEnd3"/>
+					</tensionBelt>
+                    <tensionBelt startNode="tensionBeltStart4" endNode="tensionBeltEnd4">
+						<intersectionNode node="intersection4"/>
+						<intersectionNode node="intersectionEnd41"/>
+						<intersectionNode node="intersectionEnd4"/>
+					</tensionBelt>
+                    <tensionBelt startNode="tensionBeltStart5" endNode="tensionBeltEnd5">
+						<intersectionNode node="intersection5"/>
+						<intersectionNode node="intersectionEnd51"/>
+						<intersectionNode node="intersectionEnd5"/>
+					</tensionBelt>
+					<tensionBelt startNode="tensionBeltStart6" endNode="tensionBeltEnd6">
+						<intersectionNode node="intersection6"/>
+						<intersectionNode node="intersectionEnd61"/>
+						<intersectionNode node="intersectionEnd6"/>
+					</tensionBelt>
+					
+					<sounds>
+                        <addBelt template="beltOpen" />
+                        <removeBelt template="beltClose" />
+                    </sounds>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+	
+	<fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_bale" fillTypes="ROUNDBALE SQUAREBALE" capacity="1" showCapacityInShop="false" showOnHud="false"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+	
+	<ai>
+        <allowTurnBackward value="false"/>
+        <turningRadiusLimitation radius="8"/>
+		<agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2" width="2.5" height="3" length="10.3" lengthOffset="-4.2" hasCollision="false"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.4" maxX="1.4" minZ="-4.4" maxZ="4" yOffset="0.5" />
+    </foliageBending>
+
+	<baseMaterial>
+		<material name="trailer_mat" baseNode="trailer_vis">
+            <shaderParameter name="colorMat0" value="0.002 0.08 0.015 " material="0"/>
+        </material>
+    </baseMaterial>
+	
+	<baseMaterialConfigurations price="100" useDefaultColors="true" defaultColorIndex="0">
+        <baseMaterialConfiguration name="$l10n_baileyGreen" color="0.002 0.08 0.015" material="0" price="0"/>
+        <baseMaterialConfiguration name="$l10n_chromeBlack" color="0.01 0.01 0.01" material="2" price="100"/>
+        <baseMaterialConfiguration name="$l10n_chromeNightBlue" color="0.0000 0.0010 0.0190" material="2" price="100"/>
+        <baseMaterialConfiguration name="$l10n_chromeOrange" color="0.9 0.13 0.0" material="2" price="100"/>
+        <baseMaterialConfiguration name="$l10n_chromeGreen" color="0.058824 0.098039 0.0254902" material="2" price="100"/>
+        <baseMaterialConfiguration name="$l10n_chromePurple" color="0.0908 0.0040 0.1301 1" material="2" price="100"/>
+        <baseMaterialConfiguration name="$l10n_chromeBlue" color="0.0190 0.0512 0.1975 1" material="2" price="100"/>
+        <baseMaterialConfiguration name="$l10n_chromeRed" color="0.6388 0.0103 0.0103 1" material="2" price="100"/>
+        <baseMaterialConfiguration name="$l10n_chromeGold" color="0.9490 0.5295 0.0242 1" material="2" price="100"/>
+        <baseMaterialConfiguration name="$l10n_chromeLightBlue" color="0.0000 0.2348 0.7969 1" material="2" price="100"/>
+        <baseMaterialConfiguration name="$l10n_chromeBrown" color="0.1275 0.0580 0.0275 1" material="2" price="100"/>
+        <baseMaterialConfiguration name="$l10n_chromeLightGreen" color="0.0869 0.2888 0.0697 1" material="2" price="100"/>
+        <baseMaterialConfiguration name="$l10n_chromePureGreen" color="0.0185 0.7991 0.0060 1" material="2" price="100"/>
+        <baseMaterialConfiguration name="$l10n_chromeGray" color="0.2086 0.2582 0.2874 1" material="2" price="100"/>
+		<baseMaterialConfiguration name="$l10n_matteBlack" color="0.01 0.01 0.01" material="1" price="100"/>
+        <baseMaterialConfiguration name="$l10n_matteNightBlue" color="0.0000 0.0010 0.0190" material="1" price="100"/>
+        <baseMaterialConfiguration name="$l10n_matteOrange" color="0.9 0.13 0.0" material="1" price="100"/>
+        <baseMaterialConfiguration name="$l10n_matteGreen" color="0.058824 0.098039 0.0254902" material="1" price="100"/>
+        <baseMaterialConfiguration name="$l10n_mattePurple" color="0.0908 0.0040 0.1301 1" material="1" price="100"/>
+        <baseMaterialConfiguration name="$l10n_matteBlue" color="0.0190 0.0512 0.1975 1" material="1" price="100"/>
+        <baseMaterialConfiguration name="$l10n_matteRed" color="0.6388 0.0103 0.0103 1" material="1" price="100"/>
+        <baseMaterialConfiguration name="$l10n_matteGold" color="0.9490 0.5295 0.0242 1" material="1" price="100"/>
+        <baseMaterialConfiguration name="$l10n_matteBrown" color="0.1275 0.0580 0.0275 1" material="1" price="100"/>
+        <baseMaterialConfiguration name="$l10n_matteLightGreen" color="0.0869 0.2888 0.0697 1" material="1" price="100"/>
+		<material name="trailer_mat" shaderParameter="colorMat0" />
+    </baseMaterialConfigurations>
+	
+	<rimColorConfigurations useDefaultColors="true" price="50" defaultColorIndex="0">
+		<rimColorConfiguration name="$l10n_matteBlack" color="0.01 0.01 0.01" material="1" price="0"/>
+        <rimColorConfiguration name="$l10n_matteNightBlue" color="0.0000 0.0010 0.0190" material="1" price="50"/>
+        <rimColorConfiguration name="$l10n_matteOrange" color="0.9 0.13 0.0" material="1" price="50"/>
+        <rimColorConfiguration name="$l10n_matteGreen" color="0.058824 0.098039 0.0254902" material="1" price="50"/>
+        <rimColorConfiguration name="$l10n_mattePurple" color="0.0908 0.0040 0.1301 1" material="1" price="50"/>
+        <rimColorConfiguration name="$l10n_matteBlue" color="0.0190 0.0512 0.1975 1" material="1" price="50"/>
+        <rimColorConfiguration name="$l10n_matteRed" color="0.6388 0.0103 0.0103 1" material="1" price="50"/>
+        <rimColorConfiguration name="$l10n_matteGold" color="0.9490 0.5295 0.0242 1" material="1" price="50"/>
+        <rimColorConfiguration name="$l10n_matteBrown" color="0.1275 0.0580 0.0275 1" material="1" price="50"/>
+        <rimColorConfiguration name="$l10n_matteLightGreen" color="0.0869 0.2888 0.0697 1" material="1" price="50"/>
+        <rimColorConfiguration name="$l10n_chromeBlack" color="0.01 0.01 0.01" material="2" price="50"/>
+        <rimColorConfiguration name="$l10n_chromeNightBlue" color="0.0000 0.0010 0.0190" material="2" price="50"/>
+        <rimColorConfiguration name="$l10n_chromeOrange" color="0.9 0.13 0.0" material="2" price="50"/>
+        <rimColorConfiguration name="$l10n_chromeGreen" color="0.058824 0.098039 0.0254902" material="2" price="50"/>
+        <rimColorConfiguration name="$l10n_chromePurple" color="0.0908 0.0040 0.1301 1" material="2" price="50"/>
+        <rimColorConfiguration name="$l10n_chromeBlue" color="0.0190 0.0512 0.1975 1" material="2" price="50"/>
+        <rimColorConfiguration name="$l10n_chromeRed" color="0.6388 0.0103 0.0103 1" material="2" price="50"/>
+        <rimColorConfiguration name="$l10n_chromeGold" color="0.9490 0.5295 0.0242 1" material="2" price="50"/>
+        <rimColorConfiguration name="$l10n_chromeLightBlue" color="0.0000 0.2348 0.7969 1" material="2" price="50"/>
+        <rimColorConfiguration name="$l10n_chromeBrown" color="0.1275 0.0580 0.0275 1" material="2" price="50"/>
+        <rimColorConfiguration name="$l10n_chromeLightGreen" color="0.0869 0.2888 0.0697 1" material="2" price="50"/>
+        <rimColorConfiguration name="$l10n_chromePureGreen" color="0.0185 0.7991 0.0060 1" material="2" price="50"/>
+        <rimColorConfiguration name="$l10n_chromeGray" color="0.2086 0.2582 0.2874 1" material="2" price="50"/>
+	</rimColorConfigurations>
+	
+	
+	<wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+	
+	<i3dMappings>
+	  <i3dMapping id="trailer_main_component" node="0>" />
+	  <i3dMapping id="decals_0" node="0>0" />
+	  <i3dMapping id="decal" node="0>0|0" />
+	  <i3dMapping id="decal1" node="0>0|1" />
+	  <i3dMapping id="decal2" node="0>0|2" />
+	  <i3dMapping id="decal3" node="0>0|3" />
+	  <i3dMapping id="plateNode" node="0>0|4" />
+	  <i3dMapping id="connectionHoses" node="0>1" />
+	  <i3dMapping id="electricIn01" node="0>1|0" />
+	  <i3dMapping id="electricHose" node="0>1|0|0" />
+	  <i3dMapping id="electric_1" node="0>1|0|1" />
+	  <i3dMapping id="electric" node="0>1|0|2" />
+	  <i3dMapping id="referencePoint" node="0>1|0|2|0" />
+	  <i3dMapping id="cab" node="0>1|0|2|1" />
+	  <i3dMapping id="decals_1" node="0>1|0|2|2" />
+	  <i3dMapping id="hydraulicIn01" node="0>1|1" />
+	  <i3dMapping id="connectorh" node="0>1|1|0" />
+	  <i3dMapping id="hydraulic" node="0>1|1|1" />
+	  <i3dMapping id="wheels" node="0>2" />
+	  <i3dMapping id="wheelFrontLeft" node="0>2|0" />
+	  <i3dMapping id="wheelBackLeft" node="0>2|1" />
+	  <i3dMapping id="wheelFrontRight" node="0>2|2" />
+	  <i3dMapping id="wheelBackRight" node="0>2|3" />
+	  <i3dMapping id="FrontLeftHub" node="0>2|4" />
+	  <i3dMapping id="BackLeftHub" node="0>2|5" />
+	  <i3dMapping id="FrontRightHub" node="0>2|6" />
+	  <i3dMapping id="BackRightHub" node="0>2|7" />
+	  <i3dMapping id="attacherJoint" node="0>3" />
+	  <i3dMapping id="collisions" node="0>4" />
+	  <i3dMapping id="backSideCol" node="0>4|0" />
+	  <i3dMapping id="colPart01" node="0>4|1" />
+	  <i3dMapping id="colPart02" node="0>4|2" />
+	  <i3dMapping id="colPart03" node="0>4|3" />
+	  <i3dMapping id="colPart05" node="0>4|4" />
+	  <i3dMapping id="colPart06" node="0>4|5" />
+	  <i3dMapping id="frontSideBottom" node="0>4|6" />
+	  <i3dMapping id="frontSideCol" node="0>4|7" />
+	  <i3dMapping id="colPart04" node="0>4|8" />
+	  <i3dMapping id="tensionBelts" node="0>5" />
+	  <i3dMapping id="beltActivationTrigger" node="0>5|0" />
+	  <i3dMapping id="belt1" node="0>5|1" />
+	  <i3dMapping id="tensionBeltStart1" node="0>5|1|0" />
+	  <i3dMapping id="tensionBeltEnd1" node="0>5|1|0|0" />
+	  <i3dMapping id="intersection1" node="0>5|1|1" />
+	  <i3dMapping id="intersectionEnd11" node="0>5|1|1|0" />
+	  <i3dMapping id="intersectionEnd1" node="0>5|1|1|1" />
+	  <i3dMapping id="belt2" node="0>5|2" />
+	  <i3dMapping id="tensionBeltStart2" node="0>5|2|0" />
+	  <i3dMapping id="tensionBeltEnd2" node="0>5|2|0|0" />
+	  <i3dMapping id="intersection2" node="0>5|2|1" />
+	  <i3dMapping id="intersectionEnd21" node="0>5|2|1|0" />
+	  <i3dMapping id="intersectionEnd2" node="0>5|2|1|1" />
+	  <i3dMapping id="belt3" node="0>5|3" />
+	  <i3dMapping id="tensionBeltStart3" node="0>5|3|0" />
+	  <i3dMapping id="tensionBeltEnd3" node="0>5|3|0|0" />
+	  <i3dMapping id="intersection3" node="0>5|3|1" />
+	  <i3dMapping id="intersectionEnd31" node="0>5|3|1|0" />
+	  <i3dMapping id="intersectionEnd3" node="0>5|3|1|1" />
+	  <i3dMapping id="belt4" node="0>5|4" />
+	  <i3dMapping id="tensionBeltStart4" node="0>5|4|0" />
+	  <i3dMapping id="tensionBeltEnd4" node="0>5|4|0|0" />
+	  <i3dMapping id="intersection4" node="0>5|4|1" />
+	  <i3dMapping id="intersectionEnd41" node="0>5|4|1|0" />
+	  <i3dMapping id="intersectionEnd4" node="0>5|4|1|1" />
+	  <i3dMapping id="belt5" node="0>5|5" />
+	  <i3dMapping id="tensionBeltStart5" node="0>5|5|0" />
+	  <i3dMapping id="tensionBeltEnd5" node="0>5|5|0|0" />
+	  <i3dMapping id="intersection5" node="0>5|5|1" />
+	  <i3dMapping id="intersectionEnd51" node="0>5|5|1|0" />
+	  <i3dMapping id="intersectionEnd5" node="0>5|5|1|1" />
+	  <i3dMapping id="belt6" node="0>5|6" />
+	  <i3dMapping id="tensionBeltStart6" node="0>5|6|0" />
+	  <i3dMapping id="tensionBeltEnd6" node="0>5|6|0|0" />
+	  <i3dMapping id="intersection6" node="0>5|6|1" />
+	  <i3dMapping id="intersectionEnd61" node="0>5|6|1|0" />
+	  <i3dMapping id="intersectionEnd6" node="0>5|6|1|1" />
+	  <i3dMapping id="lights" node="0>6" />
+	  <i3dMapping id="backLightsHigh1" node="0>6|0" />
+	  <i3dMapping id="turnLightLeftBack" node="0>6|1" />
+	  <i3dMapping id="turnLightRightBack" node="0>6|2" />
+	  <i3dMapping id="sharedLights" node="0>6|3" />
+	  <i3dMapping id="lightBack1" node="0>6|3|0" />
+	  <i3dMapping id="lightBack2" node="0>6|3|1" />
+	  <i3dMapping id="beaconLight" node="0>6|3|2" />
+	  <i3dMapping id="beaconLight2" node="0>6|3|3" />
+	  <i3dMapping id="triangle" node="0>6|3|4" />
+	  <i3dMapping id="reverseLight" node="0>6|3|5" />
+	  <i3dMapping id="sideLightRight" node="0>6|3|6" />
+	  <i3dMapping id="plateLight1" node="0>6|3|7" />
+	  <i3dMapping id="plateLight2" node="0>6|3|8" />
+	  <i3dMapping id="sideLightLeft" node="0>6|3|9" />
+	  <i3dMapping id="beaconLightLed" node="0>6|3|10" />
+	  <i3dMapping id="beaconLightLed2" node="0>6|3|11" />
+	  <i3dMapping id="backLightsHigh2" node="0>6|4" />
+	  <i3dMapping id="backLightsHigh3" node="0>6|5" />
+	  <i3dMapping id="backLightsHigh4" node="0>6|6" />
+	  <i3dMapping id="reverseLights" node="0>6|7" />
+	  <i3dMapping id="licensePlateLightHigh" node="0>6|8" />
+	  <i3dMapping id="licensePlateLightHigh1" node="0>6|8|0" />
+	  <i3dMapping id="trailer_vis" node="0>7" />
+	  <i3dMapping id="backSide" node="0>7|0" />
+	  <i3dMapping id="deatachHolder" node="0>7|1" />
+	  <i3dMapping id="frontSide" node="0>7|2" />
+	</i3dMappings>
+</vehicle>
